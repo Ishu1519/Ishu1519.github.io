@@ -3,25 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website of Ishu1519 — Embedded Systems, Robotics, AI, and Research. Currently under construction.">
+  <meta name="description" content="Ishu1519 — Embedded systems, robotics, firmware, and hardware-software tools. Currently under construction.">
   <meta name="color-scheme" content="dark">
   <title>Ishu1519</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="site-layout" id="site-layout">
-    <div class="top-spacer" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <span class="wordmark" id="wordmark">ISHU1519</span>
+    </header>
 
     <main class="main-content" id="main-content">
+
       <h1 class="heading" id="main-heading">This website is under construction.</h1>
-      <p class="subtext" id="subtext">I'm currently building something new.</p>
+      <p class="subtext" id="subtext">I build unconventional embedded systems, robotics projects, and hardware-software tools.</p>
+
       <div class="separator" aria-hidden="true"></div>
-      <p class="disciplines" id="disciplines">Embedded Systems &bull; Robotics &bull; AI &bull; Research</p>
+
+      <section class="work-section" id="work-section" aria-label="Selected work">
+        <p class="section-label" id="section-label">Currently Building / Selected Work</p>
+
+        <ul class="project-list" id="project-list">
+
+          <li class="project-item" id="project-esp32-lab">
+            <a class="project-link" href="https://github.com/Ishu1519/ESP32-Digital-Lab" target="_blank" rel="noopener noreferrer">
+              <span class="project-name">ESP32 Digital Lab</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="project-desc">Browser-based electronics laboratory running on an original ESP32. Validated capabilities: 1 Hz–5 MHz frequency counter, 5 MHz signal generator, 4-channel logic analyzer up to 2 MS/s, and UART / I2C / SPI protocol decoding.</p>
+          </li>
+
+          <li class="project-item" id="project-bl602">
+            <a class="project-link" href="https://github.com/Ishu1519/BL602-Arduino-Core" target="_blank" rel="noopener noreferrer">
+              <span class="project-name">BL602-Arduino-Core</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="project-desc">Arduino-compatible development workflow for the Bouffalo Lab BL602 RISC-V MCU. Integrates native SDK and FreeRTOS. Supports GPIO, Serial, I2C, Wi-Fi, HTTP, and experimental BLE.</p>
+          </li>
+
+          <li class="project-item" id="project-ch32-programmer">
+            <a class="project-link" href="https://github.com/Ishu1519/esp32s3-ch32-programmer" target="_blank" rel="noopener noreferrer">
+              <span class="project-name">ESP32-S3 CH32V003 Programmer</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="project-desc">ESP32-S3 based 1-wire SWIO programmer and debugger for the CH32V003 RISC-V MCU. Supports flash programming with byte-for-byte readback verification on physical hardware.</p>
+          </li>
+
+          <li class="project-item" id="project-tws">
+            <a class="project-link" href="https://github.com/Ishu1519/TWS-A2DP-Mode" target="_blank" rel="noopener noreferrer">
+              <span class="project-name">TWS-A2DP-Mode</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="project-desc">Repurposes a TWS earbud as a Bluetooth / A2DP front-end for MCUs without native Bluetooth. Validated on Arduino Uno using a 3-FSK / Goertzel decoding approach.</p>
+          </li>
+
+          <li class="project-item" id="project-ykm-fc">
+            <a class="project-link" href="https://github.com/Ishu1519/YKM-FC" target="_blank" rel="noopener noreferrer">
+              <span class="project-name">YKM-FC</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="project-desc">ESP32-C3 micro-drone flight controller running compiled Betaflight. Features MPU6050 IMU, custom discrete MOSFET motor drivers, and 816 motors.</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <div class="separator" aria-hidden="true"></div>
+
+      <p class="disciplines" id="disciplines">Embedded Systems &bull; Robotics &bull; Firmware &bull; RISC-V &bull; ESP32 &bull; C/C++ &bull; Python &bull; ESP-IDF &bull; FreeRTOS</p>
+
+      <p class="github-link" id="github-link">
+        More work &rarr;
+        <a href="https://github.com/Ishu1519" target="_blank" rel="noopener noreferrer">GitHub @Ishu1519</a>
+      </p>
+
     </main>
 
     <footer class="site-footer" id="site-footer">
       <p class="copyright" id="copyright">&copy; 2026 Ishu1519</p>
     </footer>
+
   </div>
 </body>
 </html>
